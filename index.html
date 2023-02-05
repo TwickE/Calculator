@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bibliotecas CSS -->
+    <link rel="icon" type="image/png" href="/Calculator/favicon.png"/> <!-- Remove /Calculator to inspect locally -->
+    <link rel="stylesheet" href="/Calculator/css/animate.min.css"/>
+    <link rel="stylesheet" href="/Calculator/css/sytle.css"/>
+    <!-- Bibliotecas JS -->
+    <script src="https://kit.fontawesome.com/82445024cd.js" crossorigin="anonymous" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="calculator animate__animated animate__backInUp">
+        <div class="container">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <form action="">
+            <input id="result" type="text" disabled>
+            <br>
+            <input type="button" value="1" onclick="document.getElementById('result').value += 1">
+            <input type="button" value="2" onclick="document.getElementById('result').value += 2">
+            <input type="button" value="3" onclick="document.getElementById('result').value += 3">
+            <input type="button" value="+" onclick="document.getElementById('result').value += '+'">
+            <br>
+            <input type="button" value="4" onclick="document.getElementById('result').value += 4">
+            <input type="button" value="5" onclick="document.getElementById('result').value += 5">
+            <input type="button" value="6" onclick="document.getElementById('result').value += 6">
+            <input type="button" value="-" onclick="document.getElementById('result').value += '-'">
+            <br>
+            <input type="button" value="7" onclick="document.getElementById('result').value += 7">
+            <input type="button" value="8" onclick="document.getElementById('result').value += 8">
+            <input type="button" value="9" onclick="document.getElementById('result').value += 9">
+            <input type="button" value="/" onclick="document.getElementById('result').value += '/'">
+            <br>
+            <input type="button" value="C" onclick="document.getElementById('result').value = ''">
+            <input type="button" value="0" onclick="document.getElementById('result').value += 0">
+            <input type="button" value="=" onclick="document.getElementById('result').value = eval(document.getElementById('result').value)">
+            <input type="button" value="x" onclick="document.getElementById('result').value += '*'">
+        </form>
+    </main>
+</body>
+</html>
