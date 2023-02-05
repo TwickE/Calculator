@@ -13,19 +13,3 @@ document.querySelectorAll('button').forEach(function(button) {
         }
     });
 });
-
-document.addEventListener("keydown", function(event) {
-    if(event.key == "Enter"){
-        result.value = eval(result.value);
-    } else if(event.key == "Backspace"){
-        result.value = result.value.slice(0, -1);
-    } else if(event.key == "c" || event.key == "C"){
-        result.value = '';
-    } else if(!isNaN(event.key)){
-        result.value += event.key;
-    } else if(event.key == "+" || event.key == "-" || event.key == "*" || event.key == "/" || event.key == "%"){
-        result.value += event.key;
-    } else if(event.key == "." || event.key == ","){
-        result.value += ".";
-    }
-});
