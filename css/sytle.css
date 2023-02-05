@@ -43,6 +43,12 @@ body {
     line-height: 20px;
 }
 
+.calculator button:active {
+    background: 0;
+    box-shadow: none;
+    outline: 1px solid #929292;
+}
+
 .calculator input {
     outline: transparent;
     border: none;
